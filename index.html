@@ -13,6 +13,10 @@
 	</head>
 	<body>
 		
+		<iframe style="height:100vh; width:100vw" frameBorder="0" 
+		src="https://widget.writesonic.com/CDN/index.html?service-base-url=https%3A%2F%2Fapi -azure.botsonic.ai&token=6734f479-c105-4fe0-89fd-abe696559f29&base-origin=https%3A%2F%2Fbot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https%3A%2F%2Fbot.writesonic.com %2Fbots%2F46af8299-ea2f-4ebf-ad67-7a8f7e1d143b%2Fintegrations"> 
+		</iframe>
+
 		<header>
 			<div class="container-hero">
 				<div class="container hero">
@@ -602,5 +606,26 @@
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
+
+		<script>
+			(function (w, d, s, o, f, js, fjs) {
+			  w["botsonic_widget"] = o;
+			  w[o] =
+				w[o] ||
+				function () {
+				  (w[o].q = w[o].q || []).push(arguments);
+				};
+			  (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+			  js.id = o;
+			  js.src = f;
+			  js.async = 1;
+			  fjs.parentNode.insertBefore(js, fjs);
+			})(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+			Botsonic("init", {
+			  serviceBaseUrl: "https://api-azure.botsonic.ai",
+			  token: "6734f479-c105-4fe0-89fd-abe696559f29",
+			});
+		  </script>
+
 	</body>
 </html>
