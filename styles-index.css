@@ -1084,6 +1084,7 @@ html {
 .a-container-options {
 	color: black;
 	text-decoration: none;
+	width: auto;
 }
 
 .a-copyright {
@@ -1099,6 +1100,17 @@ html {
 	color:#e4e4e4c2;
 	text-decoration: none;
 }
+
+.a-support {
+	text-decoration: none;
+	color:black;
+}
+
+.a-support:hover {
+	text-decoration: none;
+	color:#39b0ff;
+}
+
 
 /* Suscribe */
 
