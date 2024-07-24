@@ -7,8 +7,9 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Baristas</title>
+		<title>.ANVI</title>
 		<link rel="stylesheet" href="styles-index.css" />
+		<link rel="icon" href="img/print-solid.ico" />
 		<form method="post" action="index.php"></form>
 	</head>
 	<body>
@@ -16,29 +17,31 @@
 		<header>
 			<div class="container-hero">
 				<div class="container hero">
-					<a href="ChatBot.html" class="a-support">
+					<a href="mailto:llanvicom@gmail.com" class="a-support">
 					<div class="customer-support">
 						<i class="fa-solid fa-headset"></i>
 						<div class="content-customer-support">
-							<span class="text">Soporte al cliente</span>
+							<span>Soporte al cliente</span>
 							<span class="number"><b>llanvicom@gmail.com</b></span>
 						</div>
 					</div>
 					</a>
 
 					<div class="container-logo">
-						<i class="fa-solid fa-mug-hot"></i>
-						<h1 class="logo"><a href="/">Baristas</a></h1>
+					<a href="#">
+					<img class="logo" src="img/1.png" alt="logo">
+					</a>
 					</div>
 
 					<div class="container-user">
-						<i class="fa-solid fa-user"></i>
+						<div id="carrito">
+						<a class="a-carrito" href="carrito2.html">
 						<i class="fa-solid fa-basket-shopping"></i>
-						<div class="content-shopping-cart">
-							<span class="text">Carrito</span>
-							<span class="number">(0)</span>
+						<span class="carrito" id="numerito">0</span>
+						</a>
 						</div>
 					</div>
+
 				</div>
 			</div>
 
@@ -53,22 +56,15 @@
 						<li><a href="#">Más</a></li>
 						<li><a href="#">Blog</a></li>
 					</ul>
-
-					<form class="search-form">
-						<input type="search" placeholder="Buscar..." />
-						<button class="btn-search">
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</button>
-					</form>
 				</nav>
 			</div>
 		</header>
 
 		<section class="banner">
 			<div class="content-banner">
-				<p>Café Delicioso</p>
-				<h2>100% Natural <br />Café Fresco</h2>
-				<a href="#" class="a-comprar-ahora">Comprar ahora</a>
+				<p>Your favourite</p>
+				<h2>T-shirts<br/>Here!</h2>
+				<a href="productos.html" class="a-comprar-ahora">Buy now</a>
 			</div>
 		</section>
 
@@ -77,8 +73,8 @@
 				<div class="card-feature">
 					<i class="fa-solid fa-plane-up"></i>
 					<div class="feature-content">
-						<span>Envío gratuito a nivel mundial</span>
-						<p>En pedido superior a $150</p>
+						<span>Free worldwide delivery</span>
+						<p>In all types of orders</p>
 					</div>
 				</div>
 				<div class="card-feature">
@@ -98,34 +94,37 @@
 				<div class="card-feature">
 					<i class="fa-solid fa-headset"></i>
 					<div class="feature-content">
-						<span>Servicio al cliente 24/7</span>
-						<p>LLámenos 24/7 al 123-456-7890</p>
+						<a href="mailto:llanvicom@gmail.com" class="a-support">
+							<span>Customer service 24/7</span>
+							<p>llanvicom@gmail.com</p>
+						</a>
 					</div>
 				</div>
 			</section>
 
 			<section class="container top-categories">
-				<h1 class="heading-1">Mejores Categorías</h1>
+				<h1 class="heading-1">
+					Categories</h1>
 				<div class="container-categories">
 
 					<a href="#" class="a-ver-mas">
 					<div class="card-category category-moca">
 						<p>Café moca</p>
-						<span>Ver más</span>
+						<span>See more</span>
 					</div>
 					</a>
 
 					<a href="#" class="a-ver-mas">
 					<div class="card-category category-expreso">
 						<p>Expreso Americano</p>
-						<span>Ver más</span>
+						<span>See more</span>
 					</div>
 					</a>
 
 					<a href="#" class="a-ver-mas">
 					<div class="card-category category-capuchino">
 						<p>Capuchino</p>
-						<span>Ver más</span>
+						<span>See more</span>
 					</div>
 					</a>
 
@@ -133,24 +132,26 @@
 			</section>
 
 			<section class="container top-products">
-				<h1 class="heading-1">Mejores Productos</h1>
+				<h1 class="heading-1" id="productos-destacados" >Best Sellers</h1>
 
 				<div class="container-options">
-					<a href="https://feastables.com/" class="a-container-options"><span class="active">Destacados</span></a>
-					<a href="https://feastables.com/" class="a-container-options"><span>Más recientes</span></a>
-					<a href="https://feastables.com/" class="a-container-options"><span>Mejores Vendidos</span></a>
+					<a href="#productos-destacados" class="a-container-options"><span class="active">Best Sellers</span></a>
+					<a href="productos.html" class="a-container-options"><span>Everything</span></a>
+					<a href="#novedades" class="a-container-options"><span>New Products</span></a>
 				</div>
-
+			
+				<section>
 				<div class="container-products">
+
 					<!-- Producto 1 -->
 					<a href="product-1.html" class="a-botton">
 						<div class="card-product">
 						<div class="container-img">
-							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
 							<span class="discount">-13%</span>
 							<div class="button-group">
 								<span>
-									<i class="fa-regular fa-heart"></i>
+									<i class="fa-regular fa-eye"></i>
 								</span>
 							</div>
 						</div>
@@ -170,17 +171,16 @@
 						</div>
 					</div>
 					</a>
+
 					<!-- Producto 2 -->
-					<a href="suscribe.html" class="a-botton">
-					<div class="card-product">
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
 						<div class="container-img">
-							<img
-								src="img/cafe-ingles.jpg"
-								alt="Cafe incafe-ingles.jpg"/>
-							<span class="discount">-22%</span>
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
+							<span class="discount">-13%</span>
 							<div class="button-group">
 								<span>
-									<i class="fa-regular fa-heart"></i>
+									<i class="fa-regular fa-eye"></i>
 								</span>
 							</div>
 						</div>
@@ -189,54 +189,27 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+								<i class="fa-solid fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Cafe Inglés</h3>
+							<h3>Cafe Irish</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$5.70 <span>$7.30</span></p>
+							<p class="price">$4.60 <span>$5.30</span></p>
 						</div>
 					</div>
 					</a>
-					<!--  -->
-					<a href="blog.html" class="a-botton">
-					<div class="card-product">
+
+					<!-- Producto 3 -->
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
 						<div class="container-img">
-							<img
-								src="img/cafe-australiano.jpg"
-								alt="Cafe Australiano"/>
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
+							<span class="discount">-13%</span>
 							<div class="button-group">
 								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-							</div>
-							<h3>Cafe Australiano</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$3.20</p>
-						</div>
-					</div>
-				</a>
-					<!--  -->
-					<a href="cuenta.html" class="a-botton">
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/cafe-helado.jpg" alt="Cafe Helado" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-heart"></i>
+									<i class="fa-regular fa-eye"></i>
 								</span>
 							</div>
 						</div>
@@ -248,15 +221,44 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Cafe Helado</h3>
+							<h3>Cafe Irish</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$5.60</p>
+							<p class="price">$4.60 <span>$5.30</span></p>
 						</div>
 					</div>
+					</a>
+
+					<!-- Producto 4 -->
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
+						<div class="container-img">
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
+							<span class="discount">-13%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60 <span>$5.30</span></p>
+						</div>
+					</div>
+					</a>
 				</div>
-			</a>
 			</section>
 
 			<section class="gallery">
@@ -297,25 +299,27 @@
 				</a>
 
 			</section>
-
 			<section class="container specials">
-				<h1 class="heading-1">Especiales</h1>
+				<h1 class="heading-1" id="novedades">New Products</h1>
 
+				<div class="container-options">
+					<a href="#productos-destacados" class="a-container-options"><span>Best Sellers</span></a>
+					<a href="productos.html" class="a-container-options"><span>Everything</span></a>
+					<a href="#novedades" class="a-container-options"><span class="active">New Products</span></a>
+				</div>
+
+				<section>
 				<div class="container-products">
+
 					<!-- Producto 1 -->
-					<div class="card-product">
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
 						<div class="container-img">
-							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
 							<span class="discount">-13%</span>
 							<div class="button-group">
 								<span>
 									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
 								</span>
 							</div>
 						</div>
@@ -334,86 +338,17 @@
 							<p class="price">$4.60 <span>$5.30</span></p>
 						</div>
 					</div>
+					</a>
+
 					<!-- Producto 2 -->
-					<div class="card-product">
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
 						<div class="container-img">
-							<img
-								src="img/cafe-ingles.jpg"
-								alt="Cafe incafe-ingles.jpg"
-							/>
-							<span class="discount">-22%</span>
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
+							<span class="discount">-13%</span>
 							<div class="button-group">
 								<span>
 									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Cafe Inglés</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$5.70 <span>$7.30</span></p>
-						</div>
-					</div>
-					<!--  -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/cafe-viena.jpg" alt="Cafe Viena" />
-							<span class="discount">-30%</span>
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-							</div>
-							<h3>Cafe Viena</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$3.85 <span>$5.50</span></p>
-						</div>
-					</div>
-					<!--  -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/cafe-liqueurs.jpg" alt="Cafe Liqueurs" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
 								</span>
 							</div>
 						</div>
@@ -425,18 +360,77 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-regular fa-star"></i>
 							</div>
-							<h3>Cafe Liqueurs</h3>
+							<h3>Cafe Irish</h3>
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$5.60</p>
+							<p class="price">$4.60 <span>$5.30</span></p>
 						</div>
 					</div>
+					</a>
+
+					<!-- Producto 3 -->
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
+						<div class="container-img">
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
+							<span class="discount">-13%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60 <span>$5.30</span></p>
+						</div>
+					</div>
+					</a>
+
+					<!-- Producto 4 -->
+					<a href="product-1.html" class="a-botton">
+						<div class="card-product">
+						<div class="container-img">
+							<img src="img/portada-1-1.png" alt="camiseta" onmouseover="this.src='img/portada-1-2.png'" onmouseout="this.src='img/portada-1-1.png'"/>
+							<span class="discount">-13%</span>
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60 <span>$5.30</span></p>
+						</div>
+					</div>
+					</a>
 				</div>
 			</section>
 
 			<section class="container blogs">
-				<h1 class="heading-1">Últimos Blogs</h1>
+				<h1 class="heading-1">Last Blogs</h1>
 
 				<div class="container-blogs">
 					<div class="card-blog">
@@ -444,10 +438,7 @@
 							<img src="img/blog-1.jpg" alt="Imagen Blog 1" />
 							<div class="button-group-blog">
 								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
+									<a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
 								</span>
 							</div>
 						</div>
@@ -461,7 +452,7 @@
 								voluptas facilis corporis, consequatur eius est sunt
 								suscipit?
 							</p>
-							<div class="btn-read-more">Leer más</div>
+							<div class="btn-read-more">Read more</div>
 						</div>
 					</div>
 					<div class="card-blog">
@@ -469,10 +460,7 @@
 							<img src="img/blog-2.jpg" alt="Imagen Blog 2" />
 							<div class="button-group-blog">
 								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
+									<a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
 								</span>
 							</div>
 						</div>
@@ -486,7 +474,7 @@
 								voluptas facilis corporis, consequatur eius est sunt
 								suscipit?
 							</p>
-							<div class="btn-read-more">Leer más</div>
+							<div class="btn-read-more">Read more</div>
 						</div>
 					</div>
 					<div class="card-blog">
@@ -494,10 +482,7 @@
 							<img src="img/blog-3.jpg" alt="Imagen Blog 3" />
 							<div class="button-group-blog">
 								<span>
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-link"></i>
+									<a class="eye" href=""><i class="fa-solid fa-eye"></i></a>
 								</span>
 							</div>
 						</div>
@@ -511,7 +496,7 @@
 								voluptas facilis corporis, consequatur eius est sunt
 								suscipit?
 							</p>
-							<div class="btn-read-more">Leer más</div>
+							<div class="btn-read-more">Read more</div>
 						</div>
 					</div>
 				</div>
@@ -522,15 +507,15 @@
 			<div class="container container-footer">
 				<div class="menu-footer">
 					<div class="contact-info">
-						<p class="title-footer">Información de Contacto</p>
+						<p class="title-footer">Contact Information</p>
 						<ul>
 							<li>
-								Dirección: 71 Pennington Lane Vernon Rockville, CT
+								Direction: 71 Pennington Lane Vernon Rockville, CT
 								06066
 							</li>
-							<li>Teléfono: 123-456-7890</li>
+							<li>Tel: 123-456-7890</li>
 							<li>Fax: 55555300</li>
-							<li>EmaiL: baristas@support.com</li>
+							<li><a class="a-mail" href="mailto:llanvicom@gmail.com">llanvicom@gmail.com</a></li>
 						</ul>
 						<div class="social-icons">
 							<span class="facebook">
@@ -552,39 +537,40 @@
 					</div>
 
 					<div class="information">
-						<p class="title-footer">Información</p>
+						<p class="title-footer">Information</p>
 						<ul>
-							<li><a href="#">Acerca de Nosotros</a></li>
-							<li><a href="#">Información Delivery</a></li>
-							<li><a href="#">Politicas de Privacidad</a></li>
-							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#">Terms of Service</a></li>
 							<li><a href="#">Contactános</a></li>
 						</ul>
 					</div>
 
 					<div class="my-account">
-						<p class="title-footer">Mi cuenta</p>
+						<p class="title-footer">My account</p>
 
 						<ul>
-							<li><a href="#">Mi cuenta</a></li>
-							<li><a href="#">Historial de ordenes</a></li>
-							<li><a href="#">Lista de deseos</a></li>
-							<li><a href="#">Boletín</a></li>
-							<li><a href="#">Reembolsos</a></li>
+							<li><a href="#">My account</a></li>
+							<li><a href="#">Cart</a></li>
+							<li><a href="#">Newsletter</a></li>
+							<li><a href="#">Refunds</a></li>
 						</ul>
 					</div>
 
 					<div class="newsletter">
-						<p class="title-footer">Boletín informativo</p>
+						<p class="title-footer">Newsletter</p>
+
+						<div class="div-anuncio"><p class="anuncio">¡Pronto disponible!</p></div>
 
 						<div class="content">
 							<p>
-								Suscríbete a nuestros boletines ahora y mantente al
-								día con nuevas colecciones y ofertas exclusivas.
+								Subscribe to our newsletters now and stay up to 
+								date with new collections and exclusive offers.
 							</p>
 							<form>
-								<input id="email" name="email" placeholder="Ingresar el correo aquí...">
-								<input id="submit" name="submit" type="submit" value="Suscríbete">
+								<input id="email" name="email" placeholder="Enter email here...">
+								<input id="submit" name="submit" type="submit" value="Suscribe">
 							</form>
 						</div>
 					</div>
@@ -595,7 +581,7 @@
 						&copy; 2024, <a href="#" class="a-copyright">.ANVI</a>
 					</p>
 
-					<img src="img/payment.png" alt="Pagos">
+					<a href="https://help.etsy.com/hc/es/articles/360026831353--Qu%C3%A9-formas-de-pago-puedo-usar-para-comprar-en-Etsy?segment=shopping" target="_blank"><img src="img/payment.png" alt="Pagos"></a>
 				</div>
 			</div>
 		</footer>
@@ -624,5 +610,16 @@
 			}
 			</script>
 
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="main.js"></script>
+		<script src="slider.js"></script>
+		<script>
+		  jQuery(document).ready(function ($) {
+			$(".slider-img").on("click", function () {
+			  $(".slider-img").removeClass("active");
+			  $(this).addClass("active");
+			});
+		  });
+		</script>
 	</body>
 </html>
